@@ -1,0 +1,1 @@
+/home/ubuntu/dev3/idea-IC-181.5281.24/bin/idea.sh
