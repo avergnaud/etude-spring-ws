@@ -9,10 +9,17 @@
         </property>
     </bean>
 
+    <bean id="myInterceptor" class="com.poc.HeaderInterceptor" />
+
     <bean id="webServiceTemplateCountries" class="org.springframework.ws.client.core.WebServiceTemplate">
         <property name="defaultUri" value="http://localhost:8080/ws/countries" />
         <property name="marshaller" ref="jaxb2MarshallerCountries" />
         <property name="unmarshaller" ref="jaxb2MarshallerCountries" />
+        <property name="interceptors">
+            <list>
+                <ref bean="myInterceptor"/>
+            </list>
+        </property>
     </bean>
 
 </beans>

@@ -6,9 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gs-producting-web-service" />
-        <module name="header-util" />
-        <module name="ws-client" />
+        <module name="headerutil" />
       </profile>
     </annotationProcessing>
   </component>
